@@ -11,7 +11,6 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     redirect: "/dashboard",
-    component: () => import("@/layouts/default-layout/DefaultLayout.vue"),
     meta: {
       middleware: "auth",
     },
@@ -19,12 +18,107 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "/dashboard",
         name: "dashboard",
-        component: () => import("@/views/Dashboard.vue"),
+        component: () => import("@/views/HumansDashboard.vue"),
         meta: {
           pageTitle: "Dashboard",
           breadcrumbs: ["Dashboards"],
         },
       },
+      ]
+  },
+  {
+    path: "/",
+    component: () => import("@/layouts/RSPLayout.vue"),
+    redirect: "/rsp",
+    meta: {
+      middleware: "auth",
+    },
+    children: [
+      {
+        path: "/rsp",
+        name: "rsp-dashboard",
+        component: () => import("@/views/apps/rsp/Rsp.vue"),
+        meta: {
+          pageTitle: "Dashboard",
+          breadcrumbs: ["Dashboards"],
+        },
+      },
+      ]
+  },
+  {
+    path: "/",
+    redirect: "/ld",
+    component: () => import("@/layouts/LDLayout.vue"),
+    meta: {
+      middleware: "auth",
+    },
+    children: [
+      {
+        path: "/ld",
+        name: "ld-dashboard",
+        component: () => import("@/views/apps/ld/Ld.vue"),
+        meta: {
+          pageTitle: "Dashboard",
+          breadcrumbs: ["Dashboards"],
+        },
+      },
+      ]
+  },
+  {
+    path: "/",
+    redirect: "/pm",
+    component: () => import("@/layouts/PMLayout.vue"),
+    meta: {
+      middleware: "auth",
+    },
+    children: [
+      {
+        path: "/pm",
+        name: "pm-dashboard",
+        component: () => import("@/views/apps/pm/Pm.vue"),
+        meta: {
+          pageTitle: "Dashboard",
+          breadcrumbs: ["Dashboards"],
+        },
+      },
+      ]
+  },
+  {
+    path: "/",
+    redirect: "/rr",
+    component: () => import("@/layouts/RRLayout.vue"),
+    meta: {
+      middleware: "auth",
+    },
+    children: [
+      {
+        path: "/rr",
+        name: "rr-dashboard",
+        component: () => import("@/views/apps/rr/Rr.vue"),
+        meta: {
+          pageTitle: "Dashboard",
+          breadcrumbs: ["Dashboards"],
+        },
+      },
+      ]
+  },
+  {
+    path: "/",
+    redirect: "/builder",
+    component: () => import("@/layouts/default-layout/DefaultLayout.vue"),
+    meta: {
+      middleware: "auth",
+    },
+    children: [
+      // {
+      //   path: "/dashboard",
+      //   name: "dashboard",
+      //   component: () => import("@/views/Dashboard.vue"),
+      //   meta: {
+      //     pageTitle: "Dashboard",
+      //     breadcrumbs: ["Dashboards"],
+      //   },
+      // },
       {
         path: "/builder",
         name: "builder",
