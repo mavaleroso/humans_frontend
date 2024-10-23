@@ -5,6 +5,7 @@ import {
 } from "vue-router";
 import { useAuthStore } from "@/stores/auth";
 import { useConfigStore } from "@/stores/config";
+import JwtService from "@/core/services/JwtService";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -419,6 +420,14 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           pageTitle: "Sign In",
         },
+        // beforeEnter: (to, from, next) => {
+        //   console.log(JwtService.getToken());
+        //   if (JwtService.getToken()) {
+        //     next({ name: 'dashboard' });
+        //   } else {
+        //     next();
+        //   }
+        // },
       },
       {
         path: "/sign-up",

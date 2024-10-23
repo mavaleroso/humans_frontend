@@ -2,6 +2,7 @@ import { ref } from "vue";
 import { defineStore } from "pinia";
 import ApiService from "@/core/services/ApiService";
 import JwtService from "@/core/services/JwtService";
+import axios from "axios";
 
 export interface User {
   name: string;
@@ -32,6 +33,8 @@ export const useAuthStore = defineStore("auth", () => {
     user.value = {} as User;
     errors.value = [];
     JwtService.destroyToken();
+
+    delete axios.defaults.headers.common['Authorization'];
   }
 
   function login(credentials: User) {
@@ -44,8 +47,14 @@ export const useAuthStore = defineStore("auth", () => {
       });
   }
 
-  function logout() {
-    purgeAuth();
+  function logout()  {
+    return ApiService.post("logout", {})
+      .then(() => {
+        purgeAuth();
+      })
+      .catch(({ response }) => {
+        setError(response.data.errors);
+      });
   }
 
   function register(credentials: User) {
