@@ -9,10 +9,10 @@ export interface MenuItem {
 }
 
 interface General {
-  mode: "dark" | "light" | "system";
+  mode: "dark" | "light" | "system" | "rsp";
   primaryColor: "#50CD89";
   pageWidth: string;
-  layout: "dark-sidebar" | "light-sidebar" | "light-header" | "dark-header";
+  layout: "dark-sidebar" | "light-sidebar" | "light-header" | "dark-header" | "rsp-sidebar";
   iconsType: "duotone" | "solid" | "outline";
 }
 
