@@ -10,6 +10,7 @@ export interface User {
   email: string;
   password: string;
   api_token: string;
+  image_path: string;
 }
 
 export const useAuthStore = defineStore("auth", () => {
