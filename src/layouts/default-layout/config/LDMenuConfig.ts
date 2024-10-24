@@ -5,7 +5,7 @@ const MainMenuConfig: Array<MenuItem> = [
     pages: [
       {
         heading: "dashboard",
-        route: "/dashboard",
+        route: "/ld/dashboard",
         keenthemesIcon: "element-11",
         bootstrapIcon: "bi-app-indicator",
       },

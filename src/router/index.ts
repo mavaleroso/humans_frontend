@@ -35,7 +35,7 @@ const routes: Array<RouteRecordRaw> = [
     },
     children: [
       {
-        path: "/rsp",
+        path: "/rsp/dashboard",
         name: "rsp-dashboard",
         component: () => import("@/views/apps/rsp/Rsp.vue"),
         meta: {
@@ -54,7 +54,7 @@ const routes: Array<RouteRecordRaw> = [
     },
     children: [
       {
-        path: "/ld",
+        path: "/ld/dashboard",
         name: "ld-dashboard",
         component: () => import("@/views/apps/ld/Ld.vue"),
         meta: {
@@ -73,7 +73,7 @@ const routes: Array<RouteRecordRaw> = [
     },
     children: [
       {
-        path: "/pm",
+        path: "/pm/dashboard",
         name: "pm-dashboard",
         component: () => import("@/views/apps/pm/Pm.vue"),
         meta: {
@@ -92,7 +92,7 @@ const routes: Array<RouteRecordRaw> = [
     },
     children: [
       {
-        path: "/rr",
+        path: "/rr/dashboard",
         name: "rr-dashboard",
         component: () => import("@/views/apps/rr/Rr.vue"),
         meta: {

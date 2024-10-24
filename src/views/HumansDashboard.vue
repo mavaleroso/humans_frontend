@@ -6,7 +6,7 @@
   <div class="row g-5 g-xl-8">
     <!--begin::Col-->
     <div class="col-xl-3">
-        <a href="/rsp">
+        <a href="/rsp/dashboard">
         <MixedWidget8
             widget-classes="card-xl-stretch mb-xl-8"
             :image="getAssetPath('media/svg/brand-logos/plurk.svg')"
@@ -21,7 +21,7 @@
 
     <!--begin::Col-->
     <div class="col-xl-3">
-        <a href="/ld">
+        <a href="/ld/dashboard">
       <MixedWidget8
         widget-classes="card-xl-stretch mb-xl-8"
         :image="getAssetPath('media/svg/brand-logos/vimeo.svg')"
@@ -36,7 +36,7 @@
 
     <!--begin::Col-->
     <div class="col-xl-3">
-        <a href="/pm">
+        <a href="/pm/dashboard">
       <MixedWidget8
         widget-classes="card-xl-stretch mb-5 mb-xl-8"
         :image="getAssetPath('media/svg/brand-logos/kickstarter.svg')"
@@ -52,7 +52,7 @@
 
      <!--begin::Col-->
      <div class="col-xl-3">
-        <a href="/rr">
+        <a href="/rr/dashboard">
       <MixedWidget8
         widget-classes="card-xl-stretch mb-5 mb-xl-8"
         :image="getAssetPath('media/svg/brand-logos/kickstarter.svg')"
