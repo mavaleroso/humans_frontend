@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <br>
-    <h2 class="fs-2x fw-bold mb-10">Welcome to Humans</h2>
+    <h2 class="fs-2x fw-bold mb-10">Welcome to H.U.M.A.N.S</h2>
     <!--begin::Row-->
   <div class="row g-5 g-xl-8">
     <!--begin::Col-->
