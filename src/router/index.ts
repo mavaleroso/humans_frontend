@@ -12,7 +12,7 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     redirect: "/dashboard",
     meta: {
-      middleware: "auth",
+      // middleware: "auth",
     },
     children: [
       {

@@ -6,7 +6,10 @@
   <div class="row g-5 g-xl-8">
     <!--begin::Col-->
     <div class="col-xl-3">
-        <a href="/rsp/dashboard">
+        <!-- <a href="/rsp/dashboard"> -->
+
+          <router-link :to="{ name: 'rsp-dashboard' }">
+
         <MixedWidget8
             widget-classes="card-xl-stretch mb-xl-8"
             :image="getAssetPath('media/svg/brand-logos/plurk.svg')"
@@ -15,13 +18,17 @@
             date="Due: 27 Apr 2020"
             progress="75"
         ></MixedWidget8>
-        </a>
+
+      </router-link>
+        <!-- </a> -->
     </div>
     <!--end::Col-->
 
     <!--begin::Col-->
     <div class="col-xl-3">
-        <a href="/ld/dashboard">
+        <!-- <a href="/ld/dashboard"> -->
+
+          <router-link :to="{ name: 'ld-dashboard' }">
       <MixedWidget8
         widget-classes="card-xl-stretch mb-xl-8"
         :image="getAssetPath('media/svg/brand-logos/vimeo.svg')"
@@ -30,13 +37,15 @@
         date="Due: 27 Apr 2020"
         progress="75"
       ></MixedWidget8>
-      </a>
+      <!-- </a> -->
+
+       </router-link>
     </div>
     <!--end::Col-->
 
     <!--begin::Col-->
     <div class="col-xl-3">
-        <a href="/pm/dashboard">
+      <router-link :to="{ name: 'pm-dashboard' }">
       <MixedWidget8
         widget-classes="card-xl-stretch mb-5 mb-xl-8"
         :image="getAssetPath('media/svg/brand-logos/kickstarter.svg')"
@@ -45,14 +54,14 @@
         date="Due: 27 Apr 2020"
         progress="75"
       ></MixedWidget8>
-      </a>
+    </router-link>
 
     </div>
     <!--end::Col-->
 
      <!--begin::Col-->
      <div class="col-xl-3">
-        <a href="/rr/dashboard">
+      <router-link :to="{ name: 'rr-dashboard' }">
       <MixedWidget8
         widget-classes="card-xl-stretch mb-5 mb-xl-8"
         :image="getAssetPath('media/svg/brand-logos/kickstarter.svg')"
@@ -61,7 +70,7 @@
         date="Due: 27 Apr 2020"
         progress="75"
       ></MixedWidget8>
-      </a>
+    </router-link>
     </div>
     <!--end::Col-->
   </div>
