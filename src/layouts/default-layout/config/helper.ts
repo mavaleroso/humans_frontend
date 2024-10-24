@@ -223,3 +223,41 @@ export const scrolltopDispaly = computed(() => {
 export const illustrationsSet = computed(() => {
   return useConfigStore().getLayoutConfig("illustrations.set");
 });
+
+
+export const asideDisplay = computed(() => {
+  return useConfigStore().getLayoutConfig("aside.display");
+});
+
+export const headerFixedOnMobile = computed(() => {
+  return useConfigStore().getLayoutConfig("header.fixed.tabletAndMobile");
+});
+
+export const headerFixed = computed(() => {
+  return useConfigStore().getLayoutConfig("header.fixed.desktop");
+});
+
+export const asideEnabled = computed(() => {
+  return !!useConfigStore().getLayoutConfig("aside.display");
+});
+
+export const loaderEnabled = computed(() => {
+  return useConfigStore().getLayoutConfig("loader.display");
+});
+
+
+export const loaderLogo = computed(() => {
+  return (
+    import.meta.env.BASE_URL + useConfigStore().getLayoutConfig("loader.logo")
+  );
+});
+
+
+export const asideTheme = computed(() => {
+  return useConfigStore().getLayoutConfig("aside.theme");
+});
+
+
+export const asideMenuIcons = computed(() => {
+  return useConfigStore().getLayoutConfig("aside.menuIcon");
+});

@@ -10,6 +10,7 @@ import JwtService from "@/core/services/JwtService";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
+    component: () => import("@/layouts/HumansLayout.vue"),
     redirect: "/dashboard",
     meta: {
       // middleware: "auth",
