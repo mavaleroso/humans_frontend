@@ -13,7 +13,26 @@
       data-kt-drawer-direction="start"
       data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle"
     >
-      <KTSidebarLogo :sidebar-ref="sidebarRef"></KTSidebarLogo>
+      <!-- <KTSidebarLogo :sidebar-ref="sidebarRef"></KTSidebarLogo> -->
+      <div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
+        <svg
+          width="200"
+          height="100"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <text
+            x="10"
+            y="70"
+            font-family="Arial, sans-serif"
+            font-size="50"
+            fill="#A0AEC0"
+          >
+            R.R
+          </text>
+        </svg>
+
+      </div>
       <KTSidebarMenu></KTSidebarMenu>
       <KTSidebarFooter></KTSidebarFooter>
     </div>
