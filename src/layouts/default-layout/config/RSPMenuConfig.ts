@@ -17,7 +17,7 @@ const MainMenuConfig: Array<MenuItem> = [
       },
       {
         heading: "Newly Hired Staff",
-        route: "/",
+        route: "/rsp/list-of-newly-hired",
         keenthemesIcon: "user",
         bootstrapIcon: "bi-layers",
       },

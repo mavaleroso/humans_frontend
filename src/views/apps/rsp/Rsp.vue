@@ -1,5 +1,5 @@
 <template>
-  <h1>Recruitement, Selection and Placement</h1>
+  <h1 @click="test">Recruitement, Selection and Placement </h1>
     <!--begin::Row-->
     <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
       <!--begin::Col-->
@@ -108,6 +108,8 @@
   import Widget9 from "@/components/dashboard-default-widgets/Widget9.vue";
   import Widget10 from "@/components/dashboard-default-widgets/Widget10.vue";
   import MixedWidget5 from "@/components/widgets/mixed/Widget5.vue";
+  import ApiService from "@/core/services/ApiService";
+  
   
   export default defineComponent({
     name: "main-dashboard",
@@ -123,6 +125,23 @@
       Widget9,
       Widget10,
       MixedWidget5,
+    },
+    methods: {
+      test(){
+        ApiService.post("http://127.0.0.1:8000/api/verify_token", {})
+        .then(({ data }) => {
+          console.log(data);
+          this.testdata = data;
+        })
+        .catch(({ response }) => {
+           alert('error')
+        });
+      }
+    },
+    data(){
+      return {
+        testdata: null
+      }
     },
     setup() {
       return {

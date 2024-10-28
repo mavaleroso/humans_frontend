@@ -44,6 +44,15 @@ const routes: Array<RouteRecordRaw> = [
           breadcrumbs: ["Dashboards"],
         },
       },
+      {
+        path: "/rsp/list-of-newly-hired",
+        name: "rsp-list-of-newly-hired",
+        component: () => import("@/views/apps/rsp/NewlyHiredList.vue"),
+        meta: {
+          pageTitle: "Dashboard",
+          breadcrumbs: ["Dashboards"],
+        },
+      },
       ]
   },
   {
