@@ -35,7 +35,7 @@ export const useAuthStore = defineStore("auth", () => {
     errors.value = [];
     JwtService.destroyToken();
 
-    delete axios.defaults.headers.common['Authorization'];
+    delete axios.defaults.headers.common["Authorization"];
   }
 
   function login(credentials: User) {
@@ -44,11 +44,12 @@ export const useAuthStore = defineStore("auth", () => {
         setAuth(data.data);
       })
       .catch(({ response }) => {
-        setError(response.data.errors);
+        console.log(response.data);
+        setError(response.data);
       });
   }
 
-  function logout()  {
+  function logout() {
     return ApiService.post("logout", {})
       .then(() => {
         purgeAuth();

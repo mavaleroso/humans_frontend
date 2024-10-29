@@ -158,9 +158,9 @@ export default defineComponent({
 
       // Send login request
       await store.login(values);
-      const error = Object.values(store.errors);
+      const { message, status_code } = Object(store.errors);
 
-      if (error.length === 0) {
+      if (Object.values(store.errors).length == 0) {
         Swal.fire({
           text: "You have successfully logged in!",
           icon: "success",
@@ -176,7 +176,7 @@ export default defineComponent({
         });
       } else {
         Swal.fire({
-          text: error[0] as string,
+          text: message,
           icon: "error",
           buttonsStyling: false,
           confirmButtonText: "Try again!",

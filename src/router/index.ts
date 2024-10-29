@@ -25,7 +25,7 @@ const routes: Array<RouteRecordRaw> = [
           breadcrumbs: ["Dashboards"],
         },
       },
-      ]
+    ],
   },
   {
     path: "/",
@@ -53,7 +53,7 @@ const routes: Array<RouteRecordRaw> = [
           breadcrumbs: ["Dashboards"],
         },
       },
-      ]
+    ],
   },
   {
     path: "/",
@@ -72,7 +72,7 @@ const routes: Array<RouteRecordRaw> = [
           breadcrumbs: ["Dashboards"],
         },
       },
-      ]
+    ],
   },
   {
     path: "/",
@@ -91,7 +91,7 @@ const routes: Array<RouteRecordRaw> = [
           breadcrumbs: ["Dashboards"],
         },
       },
-      ]
+    ],
   },
   {
     path: "/",
@@ -110,7 +110,7 @@ const routes: Array<RouteRecordRaw> = [
           breadcrumbs: ["Dashboards"],
         },
       },
-      ]
+    ],
   },
   {
     path: "/",

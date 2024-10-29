@@ -24,18 +24,30 @@
           <td>{{ applicant.position }}</td>
           <td>{{ applicant.area_of_assignment }}</td>
           <td>{{ applicant.fundsource }}</td>
-          <td>{{ applicant.program || 'N/A' }}</td>
+          <td>{{ applicant.program || "N/A" }}</td>
           <td>{{ applicant.salary }}</td>
           <td>{{ applicant.date_hired }}</td>
-          <td>{{ applicant.end_of_contract || 'N/A' }}</td>
-          <td>{{ applicant.remarks || 'No remarks' }}</td>
+          <td>{{ applicant.end_of_contract || "N/A" }}</td>
+          <td>{{ applicant.remarks || "No remarks" }}</td>
         </tr>
       </tbody>
     </table>
     <div class="pagination">
-      <button class="btn btn-primary btn-xs" @click="prevPage" :disabled="!hasPreviousPage">Previous</button>
+      <button
+        class="btn btn-primary btn-xs"
+        @click="prevPage"
+        :disabled="!hasPreviousPage"
+      >
+        Previous
+      </button>
       <span>Page {{ currentPage }} of {{ totalPages }}</span>
-      <button class="btn btn-primary btn-xs" @click="nextPage" :disabled="!hasNextPage">Next</button>
+      <button
+        class="btn btn-primary btn-xs"
+        @click="nextPage"
+        :disabled="!hasNextPage"
+      >
+        Next
+      </button>
     </div>
   </div>
 </template>
@@ -73,7 +85,7 @@ export default defineComponent({
           .then(({ data }) => {
             this.applicants = data.data.results;
 
-            console.log(data.data.results)
+            console.log(data.data.results);
 
             this.currentPage = page;
             this.totalPages = Math.ceil(data.data.count / 10); // Assuming 10 items per page
