@@ -45,12 +45,75 @@ const routes: Array<RouteRecordRaw> = [
         },
       },
       {
+        path: "/rsp/onboarding-forms",
+        name: "rsp-onboarding-forms",
+        component: () => import("@/views/apps/rsp/OnBoardingForms.vue"),
+        meta: {
+          pageTitle: "Onboarding Forms",
+          breadcrumbs: ["Onboarding Forms"],
+        },
+      },
+      {
         path: "/rsp/list-of-newly-hired",
         name: "rsp-list-of-newly-hired",
         component: () => import("@/views/apps/rsp/NewlyHiredList.vue"),
         meta: {
           pageTitle: "Dashboard",
           breadcrumbs: ["Dashboards"],
+        },
+      },
+      {
+        path: "/rsp/neop",
+        name: "rsp-neop",
+        component: () => import("@/views/apps/rsp/Neop.vue"),
+        meta: {
+          pageTitle: "NEOP",
+          breadcrumbs: ["NEOP"],
+        },
+      },
+      {
+        path: "/rsp/cos-with-guidelines",
+        name: "rsp-cos-with-guidelines",
+        component: () => import("@/views/apps/rsp/CosWithGuidelines.vue"),
+        meta: {
+          pageTitle: "COS with Guidelines",
+          breadcrumbs: ["COS with Guidelines"],
+        },
+      },
+      {
+        path: "/rsp/newly-appointed-staff-list",
+        name: "rsp-newly-appointed-staff-list",
+        component: () => import("@/views/apps/rsp/NewlyAppointedStaffList.vue"),
+        meta: {
+          pageTitle: "Newly Appointed Staff Lists",
+          breadcrumbs: ["Newly Appointed Staff List"],
+        },
+      },
+      {
+        path: "/rsp/reports",
+        name: "rsp-reports",
+        component: () => import("@/views/apps/rsp/Reports.vue"),
+        meta: {
+          pageTitle: "Reports",
+          breadcrumbs: ["Reports"],
+        },
+      },
+      {
+        path: "/rsp/text-blast",
+        name: "rsp-text-blast",
+        component: () => import("@/views/apps/rsp/TextBlast.vue"),
+        meta: {
+          pageTitle: "Text Blast",
+          breadcrumbs: ["Text Blast"],
+        },
+      },
+      {
+        path: "/rsp/settings",
+        name: "rsp-settings",
+        component: () => import("@/views/apps/rsp/Settings.vue"),
+        meta: {
+          pageTitle: "Settings",
+          breadcrumbs: ["Settings"],
         },
       },
     ],
