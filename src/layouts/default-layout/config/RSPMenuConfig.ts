@@ -22,9 +22,39 @@ const MainMenuConfig: Array<MenuItem> = [
         bootstrapIcon: "bi-layers",
       },
       {
+        heading: "Turn - Around Time",
+        route: "/rsp/turn-around-time",
+        keenthemesIcon: "chart",
+        bootstrapIcon: "bi-layers",
+      },
+      {
+        heading: "Welcome Letter",
+        route: "/rsp/welcome-letter",
+        keenthemesIcon: "menu",
+        bootstrapIcon: "bi-layers",
+      },
+      {
+        heading: "Intro Letter",
+        route: "/rsp/intro-letter",
+        keenthemesIcon: "abstract-41",
+        bootstrapIcon: "bi-layers",
+      },
+      {
+        heading: "Congratulatory Letter",
+        route: "/rsp/congratulatory-letter",
+        keenthemesIcon: "credit-cart",
+        bootstrapIcon: "bi-layers",
+      },
+      {
+        heading: "Certificate of Completion",
+        route: "/rsp/certificate-of-completion",
+        keenthemesIcon: "abstract-25",
+        bootstrapIcon: "bi-layers",
+      },
+      {
         heading: "NEOP",
         route: "/rsp/neop",
-        keenthemesIcon: "menu",
+        keenthemesIcon: "element-7",
         bootstrapIcon: "bi-layers",
       },
       {
