@@ -63,6 +63,59 @@ const routes: Array<RouteRecordRaw> = [
         },
       },
       {
+        path: "/rsp/turn-around-time",
+        name: "rsp-turn-around-time",
+        component: () => import("@/views/apps/rsp/TurnAroundTime.vue"),
+        meta: {
+          pageTitle: "Turn Around Time",
+          breadcrumbs: ["Turn Around Time"],
+        },
+      },
+      {
+        path: "/rsp/welcome-letter",
+        name: "rsp-welcome-letter",
+        component: () => import("@/views/apps/rsp/WelcomeLetter.vue"),
+        meta: {
+          pageTitle: "Welcome Letter",
+          breadcrumbs: ["Welcome Letter"],
+        },
+      },
+      {
+        path: "/rsp/congratulatory-letter",
+        name: "rsp-congratulatory-letter",
+        component: () => import("@/views/apps/rsp/CongratulatoryLetter.vue"),
+        meta: {
+          pageTitle: "Congratulatory Letter",
+          breadcrumbs: ["Congratulatory Letter"],
+        },
+      },
+      {
+        path: "/rsp/certificate-of-completion",
+        name: "rsp-certificate-of-completion",
+        component: () => import("@/views/apps/rsp/CertificateOfCompletion.vue"),
+        meta: {
+          pageTitle: "Certificate of Completion",
+          breadcrumbs: ["Certificate of Completion"],
+        },
+      },
+
+      {
+        path: "/rsp/intro-letter",
+        name: "rsp-intro-letter",
+        component: () => import("@/views/apps/rsp/IntroLetter.vue"),
+        meta: {
+          pageTitle: "Intro Letter",
+          breadcrumbs: ["Intro Letter"],
+        },
+      },
+
+
+
+
+
+
+      
+      {
         path: "/rsp/neop",
         name: "rsp-neop",
         component: () => import("@/views/apps/rsp/Neop.vue"),
