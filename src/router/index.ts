@@ -56,7 +56,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "/rsp/list-of-newly-hired",
         name: "rsp-list-of-newly-hired",
-        component: () => import("@/views/apps/rsp/NewlyHiredList.vue"),
+        component: () => import("@/views/apps/rsp/NewlyHiredApplicants.vue"),
         meta: {
           pageTitle: "Dashboard",
           breadcrumbs: ["Dashboards"],
@@ -109,12 +109,6 @@ const routes: Array<RouteRecordRaw> = [
         },
       },
 
-
-
-
-
-
-      
       {
         path: "/rsp/neop",
         name: "rsp-neop",

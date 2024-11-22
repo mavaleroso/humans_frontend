@@ -16,7 +16,7 @@ const MainMenuConfig: Array<MenuItem> = [
         bootstrapIcon: "bi-layers",
       },
       {
-        heading: "Newly Hired Staff",
+        heading: "Hired Applicants",
         route: "/rsp/list-of-newly-hired",
         keenthemesIcon: "user",
         bootstrapIcon: "bi-layers",
@@ -89,7 +89,6 @@ const MainMenuConfig: Array<MenuItem> = [
       },
     ],
   },
-  
 ];
 
 export default MainMenuConfig;

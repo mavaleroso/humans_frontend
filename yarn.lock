@@ -1084,6 +1084,68 @@ csstype@^3.1.2:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
+datatables.net-bs5@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.npmjs.org/datatables.net-bs5/-/datatables.net-bs5-2.1.8.tgz"
+  integrity sha512-YlGws8eI3iw/1AmKJH18+YMzm/UgGb6o9s14KAC24QT1/8anolm8GnVAgGcwUcvHm3hn1i8A5QXqgbqeMRINeg==
+  dependencies:
+    datatables.net "2.1.8"
+    jquery ">=1.7"
+
+datatables.net-dt@^2, datatables.net-dt@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.npmjs.org/datatables.net-dt/-/datatables.net-dt-2.1.8.tgz"
+  integrity sha512-/ScKmyKIpKXzjOJrnJLOWMf2jOQfrYjayNMhUyeMzf3jKhNevHNvImU9MQ/Bab9yheKLjHLL24IgnshAvRFrng==
+  dependencies:
+    datatables.net "2.1.8"
+    jquery ">=1.7"
+
+datatables.net-responsive-dt@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npmjs.org/datatables.net-responsive-dt/-/datatables.net-responsive-dt-3.0.3.tgz"
+  integrity sha512-9Q3Ka8JFzLWfzAVpEePkIehQqjo0JkZiqh8r63wGzmnd/H10LmMNsTQIL5CxoKHFVMuUiWHSW3TS4Xga5E4bOg==
+  dependencies:
+    datatables.net-dt "^2"
+    datatables.net-responsive "3.0.3"
+    jquery ">=1.7"
+
+datatables.net-responsive@3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npmjs.org/datatables.net-responsive/-/datatables.net-responsive-3.0.3.tgz"
+  integrity sha512-/VU5U3P+l3GSdo92Mclt5YlrETNkfIZZU1MOk0aHNt0VqQOE0dORhx5Nwa8pYVsBuQBYzzyROZLru6UivEWv3Q==
+  dependencies:
+    datatables.net "^2"
+    jquery ">=1.7"
+
+datatables.net-select-dt@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/datatables.net-select-dt/-/datatables.net-select-dt-2.1.0.tgz"
+  integrity sha512-vYnYpD2Zy7UsuQ8RIoiEfehSuXYEZDAIOs4rvG6KLiBEnyfob9nyAE8TP361rH4bK8evecNufK7YuhYQPI4gvA==
+  dependencies:
+    datatables.net-dt "^2"
+    datatables.net-select "2.1.0"
+    jquery ">=1.7"
+
+datatables.net-select@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/datatables.net-select/-/datatables.net-select-2.1.0.tgz"
+  integrity sha512-6B1sI5pfvBen+8kySl1T0hkGoUmrw+5YGqaW4NCg+1srMw+48YV5SdWPiyCQDoev2ajBdKzHuG/wzD2INMbmJw==
+  dependencies:
+    datatables.net "^2"
+    jquery ">=1.7"
+
+datatables.net-vue3@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/datatables.net-vue3/-/datatables.net-vue3-3.0.2.tgz"
+  integrity sha512-UJs3IrKS+gsaPSy3CeL5ny/hGWm8xs77DZLYSW8QXPpDhMS7ZZfC4AGKNvXa2C9J1OllWhiR20dScpi0lKdCvQ==
+
+datatables.net@^2, datatables.net@2.1.8:
+  version "2.1.8"
+  resolved "https://registry.npmjs.org/datatables.net/-/datatables.net-2.1.8.tgz"
+  integrity sha512-47ULt+U4bcjbuGTpTlT6SnCuSFVRBxxdWa6X3NfvTObBJ2BZU0o+JUIl05wQ6cABNIavjbAV51gpgvFsMHL9zA==
+  dependencies:
+    jquery ">=1.7"
+
 dayjs@^1.11.3:
   version "1.11.10"
   resolved "https://registry.npmjs.org/dayjs/-/dayjs-1.11.10.tgz"
@@ -1990,6 +2052,11 @@ jest-worker@^27.4.5:
     "@types/node" "*"
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
+
+jquery@>=1.7:
+  version "3.7.1"
+  resolved "https://registry.npmjs.org/jquery/-/jquery-3.7.1.tgz"
+  integrity sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==
 
 js-yaml@^4.1.0:
   version "4.1.0"
@@ -3185,7 +3252,7 @@ vue-tsc@^1.0.8:
     "@vue/language-core" "1.8.22"
     semver "^7.5.4"
 
-"vue@^2.6.14 || ^3.3.0", "vue@^2.7 || ^3.0.0", vue@^3, vue@^3.0.0, "vue@^3.0.0 || ^2.0.0", "vue@^3.0.0-0 || ^2.6.0", vue@^3.0.11, vue@^3.2.0, vue@^3.2.25, vue@^3.2.41, vue@^3.3.4, "vue@> 3.0.0", vue@3.3.7:
+"vue@^2.6.14 || ^3.3.0", "vue@^2.7 || ^3.0.0", vue@^3, vue@^3.0.0, "vue@^3.0.0 || ^2.0.0", "vue@^3.0.0-0 || ^2.6.0", vue@^3.0.11, vue@^3.0.5, vue@^3.2.0, vue@^3.2.25, vue@^3.2.41, vue@^3.3.4, "vue@> 3.0.0", vue@3.3.7:
   version "3.3.7"
   resolved "https://registry.npmjs.org/vue/-/vue-3.3.7.tgz"
   integrity sha512-YEMDia1ZTv1TeBbnu6VybatmSteGOS3A3YgfINOfraCbf85wdKHzscD6HSS/vB4GAtI7sa1XPX7HcQaJ1l24zA==
